@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <div class="buttons">
+            <div class="row">
+                <button onclick="appendToResult('7')">7</button>
+                <button onclick="appendToResult('4')">4</button>
+                <button onclick="appendToResult('9')">1</button>
+                <button onclick="appendToResult('0')">0</button>
+            </div>
+            <div class="row">
+                <button onclick="appendToResult('8')">8</button>
+                <button onclick="appendToResult('5')">5</button>
+                <button onclick="appendToResult('6')">2</button>
+                <button onclick="appendToResult('*')">x</button>
+            </div>
+            <div class="row">
+                <button onclick="appendToResult('9')">9</button>
+                <button onclick="appendToResult('6')">6</button>
+                <button onclick="appendToResult('3')">3</button>
+                <button onclick="appendToResult('-')">-</button>
+            </div>
+            <div class="row">
+                <button onclick="clearResult()">C</button>
+                <button onclick="appendToResult('+')">+</button>
+                <button onclick="appendToResult('/')">/</button>
+                 <button onclick="calculateResult()">=</button>
+                
+            </div>
+            <div class="row">
+                <button onclick="percentage()">%</button>
+                <button onclick="square()">x^2</button>
+                <button onclick="cube()">x^3</button>
+                <button onclick="log()">log</button>
+            </div>
+            <div class="row">
+                <button onclick="sin()">sin</button>
+                <button onclick="cos()">cos</button>
+                <button onclick="tan()">tan</button>
+                <button onclick="ln()">ln</button>
+            </div>
+            <div class="row">
+                <button onclick="sqrt()">√</button>
+                <button onclick="pow()">x^y</button>
+                <button onclick="exp()">e^x</button>
+                <button onclick="pi()">π</button>
+            </div>
+            <div class="row">
+                <button onclick="abs()">|x|</button>
+                <button onclick="arcsin()">arcsin</button>
+                <button onclick="arccos()">arccos</button>
+                <button onclick="arctan()">arctan</button>
+            </div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
